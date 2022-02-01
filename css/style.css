@@ -4,6 +4,7 @@ body {
     font-family:'Open Sans','Ubuntu',sans-serif ;
     background-color: #fff;
     color: black;
+    text-align: center;
 }
 
 *,
@@ -408,7 +409,7 @@ body {
     display: flex;
     width: 100%;
     max-width: 1920px;
-    height: 740px;
+    height: auto;
     position: relative;
     background-color: black;
 }
@@ -427,8 +428,9 @@ body {
 ===========================================================*/
 
 .contacts__inner {
-    height: 305px;
+    height: auto;
     margin: 0 150px;
+    padding-bottom: 300px;
 }
 
 .input__block {
@@ -487,26 +489,31 @@ body {
 
 
 .button__send {
-    display: block;
+    display: inline-block;
     width: 215px;
     height: 90px;
     padding: 30px 60px;
-    margin: 0 auto;
     font-size: 25px;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+    cursor: pointer;
+    outline: rgb(65, 65, 65);
     background-color: rgb(65, 65, 65);
+    border-color:rgb(65, 65, 65) ;
     color: white;
+}
+
+.button__send:hover {
+    background-color: rgb(12, 12, 12);
 }
 
 /* FOOTER 
 =============================================================*/
 
 .footer {
-    
     background: darkslateblue url("../img/footerbg.png");
-    position: relative;
+    background-size: cover;
 }
 
 .footer__inner {
@@ -707,14 +714,6 @@ body {
             transition: opacity .2s linear;
         }
         
-        /* Contacts */
-
-        .contacts__inner {
-            display: block;
-            margin: 0 20px;
-            max-width: auto;
-        }
-        
         /* References */
 
         .references__inner {
@@ -728,6 +727,13 @@ body {
         }
         
         /* Contacts*/
+
+        .contacts__inner {
+            display: block;
+            margin: 0 20px;
+            max-width: auto;
+            padding-bottom: 100px;
+        }
 
         .input__block {
             display: block;
@@ -788,8 +794,8 @@ body {
         }
             
         .block__one {
-        margin: 0px 5px;
-        max-width: 100%;
+            margin: 0px 5px;
+            max-width: 100%;
             }
 
         .block__two {
@@ -849,7 +855,7 @@ body {
             width: 100%;
             margin: 0;
         }
-
+        
         /* Footer */
 
         .footer__inner {

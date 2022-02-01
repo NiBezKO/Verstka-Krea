@@ -294,18 +294,16 @@
             <h2 class="contacts__title">Contacts</h2>
                 <form class="contacts__inner">
                     <div class="input__block">
-                        <input type="text" id="check1" name="FullName" placeholder="Full Name" class="input__name">
-                        
-                        <input type="text" id="check2" name=E-mail placeholder="E-mail" class="input__mail">
-                        
+                        <input type="text" id="check1" name="FullName" placeholder="Full Name" class="input__name" required>
+                        <input type="text" id="check2" name=E-mail placeholder="E-mail" class="input__mail" required>
                     </div>
-                        <div class="massage__input">
-                            <input type="text" name="messages" placeholder="Massage" class="input__message">
-                        </div>
-
-                        <a class="button__send" href="#">SEND</a>
+                    <div class="massage__input">
+                        <textarea type="text" name="messages" placeholder="Massage" class="input__message"></textarea>
+                    </div>
+                    <div class="button__form">
+                        <button type="submit" class="button__send" href="#">SEND</button>
+                    </div>
                 </form>
-          
     </div>
 </section>
     
