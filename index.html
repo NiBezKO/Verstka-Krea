@@ -70,7 +70,7 @@
        </symbol>
 </svg>
 <!--Header-->
-<header class="header">
+<header id="header" class="header">
     <div class="container">
         <div class="header__inner">
             <div class="krea__logo">
@@ -83,6 +83,7 @@
                         <li><a data-goto="#Works" class="nav__link" href="#">Works</a></li>
                         <li><a data-goto="#References" class="nav__link" href="#">References</a></li>
                         <li><a data-goto="#Contact" class="nav__link" href="#">Contact</a></li>
+                        <li><a href="#modal" class="nav__link modal-links">Modal</a></li>
                     </ul>
                 </nav>
                 
@@ -157,29 +158,27 @@
             <div class="block__one">
                 
                 <div class="block-one__item">
-                    <img class="block-one__photo" src="img/works1.png" alt="">
-                    <div class="works__content works__content--block-one__item">
-                        <h2 class="project__name">Project Name</h2>
-                        <div class="project__text">2021</div>
-                    </div>
+                        <img class="block-one__photo" src="img/works1.png" alt="">
+                        <div class="works__content works__content--block-one__item">
+                            <h2 class="project__name">Project Name</h2>
+                            <p class="project__text">2021</p>
+                        </div>
                 </div>
                 
                 <div class="block-one__item">
                     <img class="block-one__photo" src="img/works1.png" alt="">
                     <div class="works__content works__content--block-one__item">
                         <h2 class="project__name">Project Name</h2>
-                        <div class="project__text">2021</div>
+                        <p class="project__text">2021</p>
                     </div>
                 </div>
-                
                 <div class="block-one__item">
                 <img class="bloc-kone__photo" src="img/works1.png" alt="">
                     <div class="works__content works__content--block-one__item">
                         <h2 class="project__name">Project Name</h2>
-                        <div class="project__text">2021</div>
+                        <p class="project__text">2021</p>
                     </div>
                 </div>
-
             </div>
             
             <div class="block__two">
@@ -188,7 +187,7 @@
                     <img class="block-two__photo" src="img/works1.png" alt="">
                     <div class="works__content works__content--block-two__item">
                         <h2 class="project__name">Project Name</h2>
-                        <div class="project__text">2021</div>
+                        <p class="project__text">2021</p>
                     </div>
                 </div>
                 
@@ -196,7 +195,7 @@
                 <img class="block-two__photo" src="img/works3.png" alt="">
                     <div class="works__content works__content--block-two__item">
                         <h2 class="project__name">Project Name</h2>
-                        <div class="project__text">2021</div>
+                        <p class="project__text">2021</p>
                     </div>
                 </div>
             </div>
@@ -207,7 +206,7 @@
                 <img class="blokc-three__photo" src="img/works3.png" alt="">
                     <div class="works__content works__content--block-three__item">
                         <h2 class="project__name">Project Name</h2>
-                        <div class="project__text">2021</div>
+                        <p class="project__text">2021</p>
                     </div>
                 </div>
                  
@@ -215,7 +214,7 @@
                 <img class="block-three__photo" src="img/works1.png" alt="">
                     <div class="works__content works__content--block-three__item">
                         <h2 class="project__name">Project Name</h2>
-                        <div class="project__text">2021</div>
+                        <p class="project__text">2021</p>
                     </div>
                 </div>
 
@@ -354,6 +353,17 @@
     </div>
 </footer>
 
+<div id="modal" class="modal">
+    <a href="#header" class="modal__area"></a>
+        <div class="modal__body">
+            <div class="modal__content">
+                <a href="#header" class="modal__close">X</a>
+                <h2 class="modal__title">Modal Window</h2>
+                <p class="modal__text">Text in modal</p>
+
+            </div>
+        </div>
+</div>
 <script src="javascript/simple-adaptive-slider.min.js"></script>
 <script src="javascript/main.js"></script>
 </body>
